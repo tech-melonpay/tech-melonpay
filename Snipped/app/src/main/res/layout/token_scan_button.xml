@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <org.sdk.signer.ui.views.DrawableAlignedButton
+            android:id="@+id/scan_button"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="@string/scan_qr"
+            android:textAlignment="center"
+            style="@style/AuthButton"/>
+        <com.luminary.business.presentation.ui.views.customtextinput.CustomTextInputLayout
+            android:id="@+id/phoneNumberInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/copied_token"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.Launch.TextInputLayout">
+            <com.luminary.business.presentation.ui.views.customtextinput.CustomTextInputEditText
+                android:id="@+id/input_manual_qrcode"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="text"
+                app:textInputMask="text"
+                style="@style/Widget.Launch.TextInputEditText"/>
+        </com.luminary.business.presentation.ui.views.customtextinput.CustomTextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

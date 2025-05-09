@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="67dp"
+    android:width="102dp"
+    android:viewportWidth="102"
+    android:viewportHeight="67">
+    <group>
+        <clip-path android:pathData="M0,0h102v67h-102z"/>
+        <path
+            android:fillColor="#f0f0f0"
+            android:pathData="M102,-0.17H0V67.17H102V-0.17Z"/>
+        <path
+            android:fillColor="#2e52b2"
+            android:pathData="M63.75,26.21H55.25L51,18.92L46.75,26.21H38.25L42.5,33.5L38.25,40.79H46.75L51,48.08L55.25,40.79H63.75L59.5,33.5L63.75,26.21ZM56.22,33.5L53.61,37.98H48.39L45.78,33.5L48.39,29.02H53.61L56.22,33.5ZM51,24.54L51.97,26.21H50.03L51,24.54ZM43.17,29.02H45.11L44.14,30.69L43.17,29.02ZM43.17,37.98L44.14,36.31L45.11,37.98H43.17ZM51,42.45L50.03,40.79H51.97L51,42.45ZM58.83,37.98H56.89L57.86,36.31L58.83,37.98ZM56.89,29.02H58.83L57.86,30.69L56.89,29.02Z"/>
+        <path
+            android:fillColor="#2e52b2"
+            android:pathData="M102,4.04H0V12.46H102V4.04Z"/>
+        <path
+            android:fillColor="#2e52b2"
+            android:pathData="M102,54.54H0V62.96H102V54.54Z"/>
+    </group>
+</vector>

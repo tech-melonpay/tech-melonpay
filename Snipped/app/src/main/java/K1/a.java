@@ -1,0 +1,47 @@
+package K1;
+
+import C.v;
+import com.google.android.gms.measurement.api.AppMeasurementSdk;
+import kotlin.Metadata;
+import kotlin.jvm.internal.f;
+
+/* compiled from: Browser.kt */
+@Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\f\b\u0080\b\u0018\u00002\u00020\u0001R\u001a\u0010\u0007\u001a\u00020\u00028\u0006X\u0087\u0004¢\u0006\f\n\u0004\b\u0003\u0010\u0004\u001a\u0004\b\u0005\u0010\u0006R\u001a\u0010\n\u001a\u00020\u00028\u0006X\u0087\u0004¢\u0006\f\n\u0004\b\b\u0010\u0004\u001a\u0004\b\t\u0010\u0006R\u001c\u0010\r\u001a\u0004\u0018\u00010\u00028\u0006X\u0087\u0004¢\u0006\f\n\u0004\b\u000b\u0010\u0004\u001a\u0004\b\f\u0010\u0006¨\u0006\u000e"}, d2 = {"LK1/a;", "", "", "a", "Ljava/lang/String;", "getName", "()Ljava/lang/String;", AppMeasurementSdk.ConditionalUserProperty.NAME, "b", "getVersion", "version", "c", "getComment", "comment", "com.github.ChuckerTeam.Chucker.library"}, k = 1, mv = {2, 0, 0})
+/* loaded from: classes.dex */
+public final /* data */ class a {
+
+    /* renamed from: a, reason: collision with root package name and from kotlin metadata */
+    @l3.b(AppMeasurementSdk.ConditionalUserProperty.NAME)
+    private final String name;
+
+    /* renamed from: b, reason: collision with root package name and from kotlin metadata */
+    @l3.b("version")
+    private final String version;
+
+    /* renamed from: c, reason: collision with root package name and from kotlin metadata */
+    @l3.b("comment")
+    private final String comment;
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof a)) {
+            return false;
+        }
+        a aVar = (a) obj;
+        return f.b(this.name, aVar.name) && f.b(this.version, aVar.version) && f.b(this.comment, aVar.comment);
+    }
+
+    public final int hashCode() {
+        int c2 = v.c(this.name.hashCode() * 31, 31, this.version);
+        String str = this.comment;
+        return c2 + (str == null ? 0 : str.hashCode());
+    }
+
+    public final String toString() {
+        String str = this.name;
+        String str2 = this.version;
+        return androidx.camera.core.impl.utils.a.n(s3.b.p("Browser(name=", str, ", version=", str2, ", comment="), this.comment, ")");
+    }
+}

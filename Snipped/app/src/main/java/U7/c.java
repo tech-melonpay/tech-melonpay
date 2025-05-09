@@ -1,0 +1,50 @@
+package U7;
+
+import C.v;
+import U0.e;
+import android.os.Bundle;
+import android.os.Parcelable;
+import com.luminary.business.presentation.entity.company.CompanyDetailsUI;
+import java.io.Serializable;
+import kotlin.jvm.internal.f;
+
+/* compiled from: OutgoingPaymentsFragmentArgs.kt */
+/* loaded from: classes2.dex */
+public final class c implements e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final CompanyDetailsUI f3674a;
+
+    public c(CompanyDetailsUI companyDetailsUI) {
+        this.f3674a = companyDetailsUI;
+    }
+
+    public static final c fromBundle(Bundle bundle) {
+        if (!v.y(bundle, c.class, "companyDetails")) {
+            throw new IllegalArgumentException("Required argument \"companyDetails\" is missing and does not have an android:defaultValue");
+        }
+        if (!Parcelable.class.isAssignableFrom(CompanyDetailsUI.class) && !Serializable.class.isAssignableFrom(CompanyDetailsUI.class)) {
+            throw new UnsupportedOperationException(CompanyDetailsUI.class.getName().concat(" must implement Parcelable or Serializable or must be an Enum."));
+        }
+        CompanyDetailsUI companyDetailsUI = (CompanyDetailsUI) bundle.get("companyDetails");
+        if (companyDetailsUI != null) {
+            return new c(companyDetailsUI);
+        }
+        throw new IllegalArgumentException("Argument \"companyDetails\" is marked as non-null but was passed a null value.");
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof c) && f.b(this.f3674a, ((c) obj).f3674a);
+    }
+
+    public final int hashCode() {
+        return this.f3674a.hashCode();
+    }
+
+    public final String toString() {
+        return "OutgoingPaymentsFragmentArgs(companyDetails=" + this.f3674a + ")";
+    }
+}

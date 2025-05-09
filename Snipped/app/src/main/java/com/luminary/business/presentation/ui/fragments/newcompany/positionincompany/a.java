@@ -1,0 +1,86 @@
+package com.luminary.business.presentation.ui.fragments.newcompany.positionincompany;
+
+import C.v;
+import U0.e;
+import android.os.Bundle;
+import android.os.Parcelable;
+import com.luminary.business.presentation.entity.company.CreateCompanyUI;
+import java.io.Serializable;
+import kotlin.jvm.internal.f;
+
+/* compiled from: PositionInCompanyFragmentArgs.kt */
+/* loaded from: classes2.dex */
+public final class a implements e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final CreateCompanyUI f12631a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final boolean f12632b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final String f12633c;
+
+    /* compiled from: PositionInCompanyFragmentArgs.kt */
+    /* renamed from: com.luminary.business.presentation.ui.fragments.newcompany.positionincompany.a$a, reason: collision with other inner class name */
+    public static final class C0135a {
+        public static a a(Bundle bundle) {
+            if (!v.y(bundle, a.class, "createCompany")) {
+                throw new IllegalArgumentException("Required argument \"createCompany\" is missing and does not have an android:defaultValue");
+            }
+            if (!Parcelable.class.isAssignableFrom(CreateCompanyUI.class) && !Serializable.class.isAssignableFrom(CreateCompanyUI.class)) {
+                throw new UnsupportedOperationException(CreateCompanyUI.class.getName().concat(" must implement Parcelable or Serializable or must be an Enum."));
+            }
+            CreateCompanyUI createCompanyUI = (CreateCompanyUI) bundle.get("createCompany");
+            if (createCompanyUI == null) {
+                throw new IllegalArgumentException("Argument \"createCompany\" is marked as non-null but was passed a null value.");
+            }
+            if (!bundle.containsKey("mEdit")) {
+                throw new IllegalArgumentException("Required argument \"mEdit\" is missing and does not have an android:defaultValue");
+            }
+            boolean z10 = bundle.getBoolean("mEdit");
+            if (!bundle.containsKey("companyId")) {
+                throw new IllegalArgumentException("Required argument \"companyId\" is missing and does not have an android:defaultValue");
+            }
+            String string = bundle.getString("companyId");
+            if (string != null) {
+                return new a(createCompanyUI, z10, string);
+            }
+            throw new IllegalArgumentException("Argument \"companyId\" is marked as non-null but was passed a null value.");
+        }
+    }
+
+    public a(CreateCompanyUI createCompanyUI, boolean z10, String str) {
+        this.f12631a = createCompanyUI;
+        this.f12632b = z10;
+        this.f12633c = str;
+    }
+
+    public static final a fromBundle(Bundle bundle) {
+        return C0135a.a(bundle);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof a)) {
+            return false;
+        }
+        a aVar = (a) obj;
+        return f.b(this.f12631a, aVar.f12631a) && this.f12632b == aVar.f12632b && f.b(this.f12633c, aVar.f12633c);
+    }
+
+    public final int hashCode() {
+        return this.f12633c.hashCode() + v.d(this.f12631a.hashCode() * 31, 31, this.f12632b);
+    }
+
+    public final String toString() {
+        StringBuilder sb2 = new StringBuilder("PositionInCompanyFragmentArgs(createCompany=");
+        sb2.append(this.f12631a);
+        sb2.append(", mEdit=");
+        sb2.append(this.f12632b);
+        sb2.append(", companyId=");
+        return androidx.camera.core.impl.utils.a.n(sb2, this.f12633c, ")");
+    }
+}

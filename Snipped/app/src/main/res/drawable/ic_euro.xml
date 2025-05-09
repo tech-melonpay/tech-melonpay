@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="67dp"
+    android:width="101dp"
+    android:viewportWidth="101"
+    android:viewportHeight="67">
+    <group>
+        <clip-path android:pathData="M0,0h101v67h-101z"/>
+        <path
+            android:fillColor="#0052b4"
+            android:pathData="M101,-0.17H0V67.17H101V-0.17Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M50.5,14.56L51.51,17.66H54.77L52.13,19.58L53.14,22.68L50.5,20.76L47.86,22.68L48.87,19.58L46.23,17.66H49.49L50.5,14.56Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M37.11,20.11L40.01,21.59L42.32,19.28L41.81,22.5L44.71,23.98L41.49,24.49L40.98,27.71L39.5,24.81L36.28,25.32L38.59,23.01L37.11,20.11Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M31.56,33.5L34.66,32.49L34.66,29.23L36.58,31.87L39.68,30.86L37.76,33.5L39.68,36.14L36.58,35.13L34.66,37.77V34.51L31.56,33.5Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M37.11,46.89L38.59,43.99L36.28,41.68L39.5,42.19L40.98,39.29L41.49,42.51L44.71,43.02L41.81,44.5L42.32,47.71L40.01,45.41L37.11,46.89Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M50.5,52.44L49.49,49.34H46.23L48.87,47.42L47.86,44.32L50.5,46.24L53.14,44.32L52.13,47.42L54.77,49.34H51.51L50.5,52.44Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M63.89,46.89L60.99,45.41L58.68,47.71L59.19,44.5L56.29,43.02L59.51,42.51L60.02,39.29L61.5,42.19L64.72,41.68L62.41,43.99L63.89,46.89Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M69.44,33.5L66.34,34.51V37.77L64.42,35.13L61.32,36.14L63.24,33.5L61.32,30.86L64.42,31.87L66.34,29.23L66.34,32.49L69.44,33.5Z"/>
+        <path
+            android:fillColor="#ffda44"
+            android:pathData="M63.89,20.11L62.41,23.01L64.72,25.32L61.5,24.81L60.02,27.71L59.51,24.49L56.29,23.98L59.19,22.5L58.68,19.28L60.99,21.59L63.89,20.11Z"/>
+    </group>
+</vector>

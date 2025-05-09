@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/cell_bank_acoount_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.luminary.business.presentation.ui.views.customtextinput.CustomTextInputLayout
+        android:id="@+id/accountInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/account_in_other_bank"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Luminary.TextInputLayout">
+        <com.luminary.business.presentation.ui.views.customtextinput.CustomTextInputEditText
+            android:id="@+id/accountInputView"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:cursorVisible="false"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no"
+            style="@style/Widget.Luminary.TextInputEditTextNoHint"/>
+    </com.luminary.business.presentation.ui.views.customtextinput.CustomTextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
